@@ -14,10 +14,16 @@ public class CoinTest {
 
     @Test
     public void coinTest2(){
+        CoinAlgorythm alg = new CoinAlgorythm(51);
+        alg.run();
+        Assert.assertEquals(" 50 1", alg.print());
+    }
+
+    @Test
+    public void coinTest3(){
         CoinAlgorythm alg = new CoinAlgorythm(235);
         alg.run();
         Assert.assertEquals(" 50 50 50 50 25 10", alg.print());
     }
-
 
 }
